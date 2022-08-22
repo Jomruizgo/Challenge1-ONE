@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    background: #e5e5e5;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+header{
+    width: 100%
+}
+
+.Logo{
+    margin-top: 24px;
+    margin-left: 16px;
+}
+
+.textInput{
+    width: 100%;
+    margin:20px 0 20px 0;
+    padding: 0 15px;
+    border: none;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.Frame1{
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.Frame3{
+    width: 100%;
+    margin: 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+
+.btnEncriptar{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 24px;
+    width: 80%;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+}
+
+.btnDesencriptar{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    padding: 24px;    
+    width: 80%;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.outSection{
+    margin: 0 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 10px;
+    gap: 32px;
+    background: #FFFFFF;
+    border-radius: 32px;
+}
+
+.Frame5{
+    background: #FFFFFF;
+}
+
+.Frame5 img{
+    background: #FFFFFF;
+    display: none;
+}
+
+.Frame5 h2{
+    max-width: 85%;
+    margin: auto;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    background: #FFFFFF;
+    text-align: center;
+    color: #343A40;
+}
+
+.Frame5 p{
+    max-width: 85%;
+    margin: auto;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+.out{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    border: none;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    background: #FFFFFF;
+}
+
+.textOut{
+    background: #FFFFFF;
+    width: 100%;
+    border: none;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    color: #495057;    
+}
+
+.btnCopy{
+    cursor: pointer;
+    padding: 24px;    
+    width: 80%;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background: #FFFFFF;
+}
+
+/*Para mostrar efecto cuando el puntero se posiciona sobre los botones.*/
+.btnCopy:hover, .btnEncriptar:hover, .btnDesencriptar:hover{
+    transform: scale(1.02);
+}
+
+/*Para mostrar efecto al hacer clic en los botones*/
+.btnCopy:active, .btnEncriptar:active, .btnDesencriptar:active{
+    transform: scale(1.0);
+    opacity: 0.7;
+}
+
+footer{
+    background: #0A3871;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+footer p{
+    background: #0A3871;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media (min-width: 426px){
+    .Frame3{
+        flex-direction: row;
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 769px){
+    html{
+        height: 100%;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /*Garantiza footer en parte inferior*/
+        max-width: 1200px;
+        margin: auto;
+        height: 100%;
+    }
+
+    main{
+        display: flex;
+    }
+    
+    .inSection{
+        width: 65%;
+    }
+
+    .Logo{
+        width: 50px;
+    }
+
+    .textInput{
+        min-height: 500px;
+    }
+
+    .Frame1{
+        font-size: 15px;
+    }
+
+    .btnEncriptar, .btnDesencriptar, .btnCopy{
+        font-size: 16px;
+    }
+
+    .Frame5{
+        margin: auto 0;
+    }
+
+    .Frame5 img{
+        display: block;
+    }
+
+    .outSection{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        margin-bottom: 0;
+    }
+
+    .textOut{
+        min-height: 526px;
+    }
+
+}

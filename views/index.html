@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <script src="https://kit.fontawesome.com/0c23460abe.js" crossorigin="anonymous"></script>  <!--Link for icons-->
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <img class="Logo" src="/public/images/Logo.svg" alt="Logo Alura">
+    </header>
+    <main>
+        <section class="inSection">
+            <textarea class="textInput" rows="5" placeholder="Ingrese el texto aqui"></textarea>
+            <p class="Frame1"> <i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos.</p>
+            <div class="Frame3">
+                <button class="btnEncriptar" onclick="Encryptor()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="Decryptor()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="outSection">
+            <div class="Frame5">
+                <img src="/public/images/Muñeco.svg" alt="Imagen de búsqueda">
+                <h2>Ningún mensaje fué encontrado</h2>
+                <p>Ingrese el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="out">
+                <textarea class="textOut" rows="5" placeholder="Texto de Salida" readonly></textarea>
+                <button class="btnCopy" onclick="Copy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Realizado por: Jorge Mario Ruiz, 2022</p>
+    </footer>
+</body>
+<script src="/public/js/script.js"></script>
+</html>
